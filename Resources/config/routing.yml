@@ -1,0 +1,15 @@
+netgusto_adminlte_login_form:
+    pattern:  /login
+    defaults: { _controller: NetgustoAdminLTEBundle:Login:index }
+
+netgusto_adminlte_login_check:
+    pattern: /login_check
+    # no controller, symfony intercepts this
+
+netgusto_adminlte_logout:
+    pattern: /logout
+    # no controller, symfony intercepts this
+
+netgusto_adminlte_homepage:
+    pattern:  /
+    defaults: { _controller: NetgustoAdminLTEBundle:Default:index }

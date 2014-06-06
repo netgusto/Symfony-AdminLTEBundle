@@ -1,0 +1,8 @@
+services:
+
+    netgusto_admin_lte.twig_menu_extension:
+        class: Netgusto\AdminLTEBundle\Twig\MenuExtension
+        arguments:
+            helper: @knp_menu.helper
+        tags:
+            - { name: twig.extension }

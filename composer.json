@@ -1,0 +1,51 @@
+{
+    "name": "netgusto/adminlte-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony2 Project AdminLTE integration Bundle",
+    "keywords": ["symfony", "distribution"],
+    "homepage": "https://github.com/netgusto/Symfony-AdminLTEBundle",
+    "license": "MIT",
+    "authors": [
+        {
+          "name": "Net Gusto",
+          "email": "contact@netgusto.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/framework-bundle": "~2.4",
+        "almasaeed2010/adminlte": "dev-master",
+        "netgusto/distribution-bundle": "dev-master",
+        "knplabs/knp-menu-bundle": "v1.1.2",
+        "friendsofsymfony/user-bundle": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "almasaeed2010/adminlte",
+                "version": "dev-master",
+                "dist": {
+                    "url": "https://github.com/almasaeed2010/AdminLTE/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        }
+    ],
+    "scripts": {
+        "post-install-cmd": [
+            "Netgusto\\DistributionBundle\\Composer\\ScriptHandler::forwardAssetsToWebDir"
+        ],
+        "post-update-cmd": [
+            "Netgusto\\DistributionBundle\\Composer\\ScriptHandler::forwardAssetsToWebDir"
+        ]
+    },
+    "suggest": {
+    },
+    "autoload": {
+        "psr-0": { "Netgusto\\AdminLTEBundle": "" }
+    },
+    "target-dir": "Netgusto/AdminLTEBundle",
+    "extra": {
+    }
+}

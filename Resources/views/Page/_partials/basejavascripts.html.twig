@@ -1,0 +1,19 @@
+{% block basejavascripts %}
+<script type="text/javascript" src="{{ asset('js/lib/require.js') }}"></script>
+<script type="text/javascript">
+
+    require.config({
+        baseUrl: '/js',
+        paths: {
+            'jquery': '/js/lib/jquery',
+            'bootstrap': '/js/lib/bootstrap',
+            'adminlte/app': '{{ asset("vendor/almasaeed2010/adminlte/js/AdminLTE/app") }}'
+        },
+        shim: {
+            'bootstrap': {
+                deps: ['jquery']
+            }
+        }
+    });
+</script>
+{% endblock %}
