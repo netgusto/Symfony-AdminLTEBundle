@@ -14,10 +14,10 @@
     "require": {
         "php": ">=5.3.3",
         "symfony/framework-bundle": "~2.4",
-        "netgusto/adminlte": "dev-master",
         "netgusto/distribution-bundle": "dev-master",
         "knplabs/knp-menu-bundle": "v1.1.2",
-        "friendsofsymfony/user-bundle": "dev-master"
+        "friendsofsymfony/user-bundle": "dev-master",
+        "netgusto/adminlte": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
